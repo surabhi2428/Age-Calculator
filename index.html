@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agecalculatorstyle.css">
+
+    <title>AGE CALCULATOR</title>
+   
+</head>
+<body>
+    <div id="age">
+    <h1> AGE CALCULATOR</h1>
+
+        
+       <p style="color: chocolate;  font-size: 20px; font-weight: 700;"> DATE OF BIRTH: <input type="date" id="of1" class="q" style="color: brown;" > </p>
+        
+        <br>
+        
+       <p style="color: chocolate;  font-size: 20px; font-weight: 700;" > AGE AT THE DATE OF	 : <input type="date" id="of2" class="q2"> </p>
+        
+        <br>
+   <button onclick="calculater()" id="on"> CALCULATOR</button>
+   <p id="result"></p> 
+
+    </div>
+    <script>
+       const calculater=()=>{
+           let a= document.getElementById("of1").value
+           let b= document.getElementById("of2").value
+           let dob= new Date (a)
+           let gob=new Date(b)
+           let c= dob.getDate()
+           let d= dob.getFullYear()
+           let e =dob.getMonth()+1
+           console.log(` ${c}date:${e}month:${d}year`)
+
+         let f= gob.getDate()
+           let g= gob.getFullYear()
+           let h =gob.getMonth()+1
+           console.log(` ${f}date:${h}month:${g}year`)
+         
+           let diff= gob-dob
+           console.log(diff)
+           let mon=1000*60
+           let hr =mon*60
+           let day =hr*24
+           let yr=day*365
+           let yy= Math.round(diff/yr)
+           console.log(yy)
+           let dd= Math.round(diff/day)
+           console.log(dd)
+           let mm = Math.round(diff/mon)
+           console.log(mm)
+           if(d>=g)
+           {
+               alert("not born")
+           }
+           else{
+           let r=document.getElementById("result").innerHTML= (` YEAR  : ${yy}    , DAY : ${dd}  `)
+           }  
+      
+
+
+
+
+           // console.log(a)
+           // console.log(b)
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: cadetblue;
+    background-color: pink;
+}
+#age{
+    /*text-align: center;*/
+    width: 40%;
+    top: 50%;
+    background-color: purple;
+    
+    text-align: center;
+    border: 4px solid green;
+    padding: 55px;
+    margin: 53px;
+
+}
+input{
+    
+    padding: 4px;
+    margin: 0px 0px 10px 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+button{
+    width: 100%;
+    margin: 30px 0px 10px 0px;
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+#result{
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    width: 50%;
+    height: 20%;
+    border:  4px solid red;
+    color: seagreen;
+    background-color: silver;
+    padding: 23px;
+    margin: 23px;
+
+    
+}
